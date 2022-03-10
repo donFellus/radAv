@@ -1,6 +1,22 @@
 // This macro is designed to crop cells from micrographs based on the cSMAC signal for subsequent 
-// radial averaging with radAvBatchHT of each channel in the micrograph. The macro must be applied
+// radial averaging with radialAvg of each channel in the micrograph. The macro must be applied
 // to all condition folders
+
+// Copyright (C) 2022, Kvalvaag project group - Oslo University Hospital 
+// 
+// radAvgBatchCrop is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+// 
+// radAvgBatchCrop is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// <http://www.gnu.org/licenses/>
+
+// Audun Kvalvaag, August 2020 (last modified 2022/03/09)
 
 dir=getDirectory("Choose an Input Directory"); 
 print(dir);
