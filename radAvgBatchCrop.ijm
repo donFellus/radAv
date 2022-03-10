@@ -1,11 +1,12 @@
 // This macro is designed to crop cells from micrographs based on the cSMAC signal for subsequent 
-// radial averaging with radAvBatchHT of each channel in the micrograph. 
+// radial averaging with radAvBatchHT of each channel in the micrograph. The macro must be applied
+// to all condition folders
 
 dir=getDirectory("Choose an Input Directory"); 
 print(dir);
 
 Dialog.create("Crop")
-Dialog.addString("Channel", " "); //set cSMAC channel
+Dialog.addString("cSMAC channel", " "); //set cSMAC channel
 Dialog.show();
 Channel = Dialog.getString();
 mF = 1.5; //set bounding box multiplication factor
@@ -128,4 +129,4 @@ function batchCrop(dir) {
 	}
 }
 
-	
+		
